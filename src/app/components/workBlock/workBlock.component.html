@@ -1,5 +1,7 @@
 <div class="work_block">
-    <div class="job_title">{{jobTitle}}</div>
-    <div class="company">{{company}}</div>
-    <div>{{content}}</div>
+    <div class="job_title">{{jobObject.title}}</div>
+    <div class="company">{{jobObject.company}}</div>
+    <ul>
+        <li *ngFor="let content of jobObject.experience">{{content}}</li>
+    </ul>
 </div>

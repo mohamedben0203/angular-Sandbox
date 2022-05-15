@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { jobInterface } from '../interfaces';
 
 @Component({
   selector: 'workBlock',
@@ -7,12 +8,6 @@ import { Component, Input } from '@angular/core';
 })
 export class WorkBlockComponent {
   @Input()
-  public jobTitle: string ='';
-
-  @Input()
-  public company: string = '';
-
-  @Input()
-  public content: string = '';
+  public jobObject!: jobInterface;
 
 }
