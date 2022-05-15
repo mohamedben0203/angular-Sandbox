@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-workBlock',
+  selector: 'workBlock',
   templateUrl: './workBlock.component.html',
   styleUrls: ['./workBlock.component.scss']
 })

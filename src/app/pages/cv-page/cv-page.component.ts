@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { WorkBlockComponent } from 'src/app/components/workBlock/workBlock.component';
 
 @Component({
   selector: 'app-cv-page',

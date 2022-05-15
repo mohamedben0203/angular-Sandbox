@@ -5,8 +5,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 const routes: Routes = [
-  { path: 'cv', component: CvPageComponent },
   { path: 'home', component: HomeComponent },
+  { path: 'cv', component: CvPageComponent },
   { path: '**', component: NotFoundComponent },
 
 ];
