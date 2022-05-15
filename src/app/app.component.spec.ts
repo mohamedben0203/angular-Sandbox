@@ -26,10 +26,4 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('angular-Sandbox');
   });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('angular-Sandbox app is running!');
-  });
 });
