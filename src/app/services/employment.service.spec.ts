@@ -19,4 +19,13 @@ describe('EmploymentService', () => {
     const jobs: jobInterface[] = service.getJobs();
     expect(jobs.length).toBe(4);
   });
+
+  it('should return array of jobInterface objects', () => {
+    const jobs: jobInterface[] = service.getJobs();
+    for(let job of jobs){
+      expect(job.title).toBeTruthy();
+      expect(job.company).toBeTruthy();
+      expect(job.experience).toBeTruthy();
+    }
+  });
 });
